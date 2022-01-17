@@ -1,0 +1,28 @@
+
+.icons{
+  width: 1024px;
+  height: 44px;
+  margin-top: 124px;
+  margin-right: 49px;
+  margin-bottom: 10px;
+  margin-left: 52px;
+  display: none;
+ 
+}
+@media screen and (min-width:768px){
+  .icons{
+    display: flex;
+  }
+}
+@media screen and(min-width:768px) {
+  .todo{
+    width: 1024px;
+    height: 44px;
+    background: linear-gradient(180deg,#ffffff,0%,#ffffff 100%);
+    position: absolute;
+    margin-left: 209px;
+    margin-top: 279px;
+    
+  }
+  
+}

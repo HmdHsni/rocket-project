@@ -1,0 +1,222 @@
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: local('Roboto-Light'), url(./fonts/Roboto-Light.ttf);
+}
+
+
+
+
+
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 760px;
+  height: 32px;
+  background: transparent;
+  color: #545454;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color:black;
+  background: linear-gradient(
+    180deg,
+    #FFFFFF 100%,
+    #FFFFFF 100%
+  );
+
+  padding: 16px;
+  border-bottom:1px solid #dedede;
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #f85757;
+  width: 13.5px;
+  height: 15px;
+}
+
+.edit-icon {
+  color: #557bdd;
+  width: 13.5px;
+  height: 15px;
+}
+.btnComp{
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+
+@media  (min-width:768px){
+
+  .header1{
+    background-color: #609fff;
+    
+    width: 1440px;
+    height: 91px;
+    text-align: center;
+  border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   color: #ffffff;
+   font-family: Roboto;
+   font-weight: bold;
+   font-size: 12px;
+   padding: 20px 30px 30px ;
+   display: flex;
+  
+  }
+ 
+}
+@media  (min-width:768px){
+  .headertxt{
+    width: 700px;
+    font-size: 24px;
+    color: white;
+    line-height: 28.13px;
+    display:flex;
+  }
+  }
+  @media (min-width:768px) 
+  {
+    .Regtangle4{
+      width: 1440px;
+      height: 813px;
+      background: linear-gradient(0deg,rgba(96,159,255,0.02),rgba(96,159,255,0.02));
+    }
+    
+  }
+  .DateTimeSction{
+    height: 48px;
+    width: 374px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 20px;
+    border-radius: 0px;
+    
+  }
+ 
+  @media (min-width:768px) 
+  {
+  .DateTimeSction{
+    position: absolute;
+    width: 1024px;
+    height: 48px;
+  margin-left: 209px;
+  margin-top: 199px;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+}
+
+@media (min-width:768px) 
+{
+.ComINcom{
+  display: flex;
+  flex-direction: row;
+
+}
+}
+@media (min-width:768px) 
+{
+.sectiontxt{
+  width: 121px;
+  height: 20px;
+  font-weight: 400px;
+}}
+
+.footer{
+  display: flex;
+
+width: 56px;
+height: 56px;
+position: absolute;
+color:#609fff;
+margin: 500px 500px 20px 20px;
+font-size: 40px;
+}
+
+
+
+
+.add-btn{
+  background: #609fff;
+  border-radius: 28px;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400px;
+  color: #ffffff;
+  margin: 740px 226px 17px 1158px;
+}
