@@ -1,28 +1,52 @@
 
-.icons{
-  width: 1024px;
-  height: 44px;
-  margin-top: 124px;
-  margin-right: 49px;
-  margin-bottom: 10px;
-  margin-left: 52px;
-  display: none;
- 
-}
-@media screen and (min-width:768px){
-  .icons{
-    display: flex;
+.edit-icon {
+    color: #557bdd;
+   
   }
-}
-@media screen and(min-width:768px) {
-  .todo{
-    width: 1024px;
-    height: 44px;
-    background: linear-gradient(180deg,#ffffff,0%,#ffffff 100%);
-    position: absolute;
-    margin-left: 209px;
-    margin-top: 279px;
+ 
+  .icon{
+
+    display: none;
+   
+  }
+  @media screen and (min-width:768px){
+    .icon{
+      display: flex;
+      font-size: 30px;
+    }
+  }
+  @media (min-width:768px) {
+    .todo{
+      width: 1024px;
+      height: 44px;
+      background: linear-gradient(180deg,#ffffff,0%,#ffffff 100%);
+      position: absolute;
+      margin-left: 209px;
+      margin-top: 333px;
+      border-bottom:  1px solid #DEDEDE;
+      
+     
+     
+      
+    }
     
   }
+  @media (max-width:768px) {
+  .todo{
+   
+  width: 400px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  font-size: 20px;
   
-}
+  }}
+  .brderTodo{
+      border-bottom: solid 1px  #DEDEDE;
+      width: 390px;
+     padding-bottom:  20px;
+  
+   
+  }

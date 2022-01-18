@@ -2,41 +2,39 @@ import React, { Component } from 'react';
 import { AiFillCloseCircle } from "react-icons/ai";
 import { AiFillEdit } from 'react-icons/ai';
 import './Items.css';
+import TodoList from './TodoList';
 
 
 class Items extends Component{
     render()
     {
     return (
-      <div className="todo d-md-flex d-lg-flex justify-content-md-around justify-content-lg-around">
-
-<div className="col-12 ">
-<li> Todolist</li>
-</div>
-
-        <AiFillCloseCircle className='delete-icon' data-bs-toggle="modal" data-bs-target="#exampleModal2"
-        />
-        <AiFillEdit className='edit-icon'data-bs-toggle="modal" data-bs-target="#exampleModal2"
-        />
- 
-     
       
-      
-     
-     
-
- 
 
 
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<div className="todo d-flex justify-content-between ">
+
+{/*comment: create 6 todo when component is render {this.CreateTodo()}*/}
+
+
+
+<li className="brderTodo"> Todolist</li>
+<div className=" icon d-none d-md-flex d-lg-flex">
+       <AiFillCloseCircle className="deleteIcon "  
+       />
+       <AiFillEdit className='edit-icon 'data-bs-toggle="modal" data-bs-target="#exampleModal2"
+       /></div>
+       
+       <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Edit todo</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+      <TodoList />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -45,10 +43,12 @@ class Items extends Component{
     </div>
   </div>
 </div>
-{/**etmam modal */}
-    
 
 </div>
+
+        
+    
+
 
 
     );

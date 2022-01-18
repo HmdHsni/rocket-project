@@ -9,6 +9,7 @@
 
 
 
+
 .complete {
   text-decoration: line-through;
   opacity: 0.4;
@@ -17,43 +18,62 @@
 .todo-form {
   margin-bottom: 32px;
 }
-
+@media screen and (min-width:768px) {
+  
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #5d0cff;
+  border-radius: 2px;
   outline: none;
-  width: 760px;
+  width: 400px;
+  height: 50px;
+  background: transparent;
+  color: #545454;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 19px;
+}
+}
+  
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  border-radius: 2px;
+  outline: none;
+  width: 400px;
   height: 32px;
   background: transparent;
   color: #545454;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 19px;
 }
+
+
 
 .todo-input::placeholder {
   color: #e2e2e2;
 }
 
 .todo-button {
-  padding: 16px;
+  
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background: #609FFF;
   color: #fff;
-  text-transform: capitalize;
+  width: 35px;
+  height: 32px;
 }
 
 .todo-input.edit {
   border: 2px solid #149fff;
+
 }
 
 .todo-button.edit {
@@ -63,6 +83,8 @@
     rgba(17, 122, 255, 1) 100%
   );
   padding: 16px 22px;
+  width: 5px;
+  height: 5px;
 }
 
 .todo-container {
@@ -76,7 +98,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 4px auto;
-  color:black;
+  
   background: linear-gradient(
     180deg,
     #FFFFFF 100%,
@@ -90,30 +112,43 @@
   height: 40px;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  cursor: pointer;
-}
 
-.delete-icon {
-  margin-right: 5px;
+
+.deleteIcon  {
+  margin-right: 30px;
   color: #f85757;
-  width: 13.5px;
-  height: 15px;
+ 
 }
 
-.edit-icon {
-  color: #557bdd;
-  width: 13.5px;
-  height: 15px;
-}
+
+
+
 .btnComp{
   width: 70px;
   height: 70px;
   align-items: center;
 }
+
+
+@media (min-width:768px) {
+  .home{
+    width: 1440px;
+    height: 900px;
+    border: solid 1px rgb(193, 193, 230);
+  }
+  
+}
+@media (max-width:768px) {
+  .home{
+    width: 414px;
+    height: 736px;
+    border: solid 1px rgb(193, 193, 230);
+    
+  }
+  
+}
+
+
 
 @media  (min-width:768px){
 
@@ -153,16 +188,7 @@
     }
     
   }
-  .DateTimeSction{
-    height: 48px;
-    width: 374px;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 20px;
-    border-radius: 0px;
-    
-  }
- 
+  
   @media (min-width:768px) 
   {
   .DateTimeSction{
@@ -170,12 +196,22 @@
     width: 1024px;
     height: 48px;
   margin-left: 209px;
-  margin-top: 199px;
+  margin-top: 300px;
     display: flex;
     justify-content: space-around;
+    font-size: 19px;
   
   }
 }
+@media (max-width:768px) 
+  {
+.showdate{
+  width: 50px;
+  height: 40px;
+
+  font-size: 30px;
+  margin: 10px 100px 30px 30px;
+}}
 
 @media (min-width:768px) 
 {
@@ -188,35 +224,51 @@
 @media (min-width:768px) 
 {
 .sectiontxt{
-  width: 121px;
-  height: 20px;
-  font-weight: 400px;
+  width: 200px;
+  height: 30px;
+  font-weight: 200px;
 }}
 
-.footer{
-  display: flex;
 
-width: 56px;
-height: 56px;
-position: absolute;
-color:#609fff;
-margin: 500px 500px 20px 20px;
-font-size: 40px;
+
+
+
+
+@media (min-width:768px) {
+  .AddIcon {
+    background: #609fff;
+    border-radius: 28px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 400px;
+    color: #ffffff;
+    margin: 740px 226px 17px 1158px;
+  }
+  
+}
+@media (max-width:768px) {
+  .AddIcon {
+    background: #609fff;
+    border-radius: 28px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 400px;
+    color: #ffffff;
+    position: absolute;
+    margin:50px 20px 20px 50px;
+  }
 }
 
-
-
-
-.add-btn{
-  background: #609fff;
-  border-radius: 28px;
-  width: 56px;
-  height: 56px;
-  text-align: center;
-  align-items: center;
-  font-size: 20px;
-  font-family: Roboto;
-  font-weight: 400px;
-  color: #ffffff;
-  margin: 740px 226px 17px 1158px;
+.icons{
+  margin-right: 30px;
+  color: #f85757;
 }
+
